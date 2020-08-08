@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="cartstyle.css"
+	>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	                                      <!-- <header> -->
+    <header>
+    	<p class="logo">CHAWOK</p>
+    	<div class="menu-toggle" ></div>
+    	<nav>
+    		<ul>
+         
+    			<li><a href="#" class="active"><b>Home</b></a></li>
+    			<li><a href="#"><b>About</b></a></li>
+    			<li><a href="#"><b>Services</b></a></li>
+          <li class="cart"><a href="cart.html"><b>Cart<span>0</span></b></a></li>
+          <!-- <li class="cart"><a href="#"><img src="cart.png" height="20px" width="30px"></a><span>0</span></li> -->
+    			
+    		</ul>
+    	</nav>
+    	<div class="clearfix">
+    		
+    	</div>
+
+    </header>
+    <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  			$('.menu-toggle').toggleClass('active')
+  			$('nav').toggleClass('active')
+  		})
+  	})
+  </script> 
+
+  <div class="products-container">
+    <div class="product-header">
+      <h5 class="product-title">PRODUCT</h5>
+      <h5 class="price">PRICE</h5>
+      <h5 class="quantity">QUANTITY</h5>
+      <h5 class="total">TOTAL</h5>
+    </div>
+    <div class="product">
+      
+    </div>
+  </div>
+</body>
+</html>
